@@ -1,0 +1,71 @@
+<!-- Typography.stories.mdx -->
+
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+
+<Meta title="Design Tokens/Typography" />
+
+export const typography = {
+  type: {
+    principal: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+    base: '"Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif',
+  },
+  weight: {
+    bold: '700',
+    medium: '600',
+    regular: '500',
+    light: '400',
+  },
+  size: {
+    xxxs: 12,
+    xxs: 14,
+    xs: 16,
+    md: 20,
+    lg: 32,
+    xl: 40,
+    xxl: 48,
+    xxxl: 64,
+    display: 80,
+    giant:96,
+  },
+};
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+
+## Font Family
+**Principal:** Blinker `$font-family-principal`
+
+**Base:** DM Sans `$font-family-base`
+
+
+## Line Height
+**Weights:**
+
+Ligth:400 `$font-weight-bold`
+
+Medium: "500" `$font-weight-Medium`
+
+Regular:600 `$font-weight-regular`
+
+Light:700 `$font-weight-light`
+
+
+## Line Size
+
+
+<Typeset
+  fontSizes={[
+    Number(typography.size.xxxs),
+    Number(typography.size.xxs),
+    Number(typography.size.xs),
+    Number(typography.size.md),
+    Number(typography.size.lg),
+    Number(typography.size.xl),
+    Number(typography.size.xxl),
+    Number(typography.size.xxxl),
+    Number(typography.size.display),
+    Number(typography.size.giant)
+  ]}
+  fontWeight={typography.weight.black}
+  sampleText={SampleText}
+  fontFamily={typography.type.principal}
+/>

@@ -1,0 +1,53 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+<Meta title="Components/Grid List"/>
+
+<Canvas>
+  <Story
+    name="Grid List">
+    {(args) =>
+            <div class="table-grid">
+                <table>
+                    <thead>
+                        <tr>
+                            <th><input onclick="marcarTodos(this.value)" type="checkbox" value="row"/></th>
+                            <th>Nome <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                            <th>E-mail <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                            <th>CPF <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                            <th>Celular <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                            <th>Origem <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                            <th>Oportunidades <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                            <th>Data Criação <span class="material-symbols-outlined">
+                                swap_vert
+                                </span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row" id="row1">
+                            <td><input onclick="marcar(this.value)" value="row1" type="checkbox"/></td>
+                            <td data-label="Nome"><a href="#">Agusto Ferreira GonçalvesTeste</a></td>
+                            <td data-label="E-mail">emailgrandepara@gmail.com</td>
+                            <td data-label="CPF">000.000.000.-00</td>
+                            <td data-label="Celular">(21)90000-0000</td>
+                            <td data-label="Origem"><a href="#">Landing Page</a></td>
+                            <td data-label="Oportunidades">2</td>
+                            <td data-label="Data da criacao">08/11/2022</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+    }
+  </Story>
+</Canvas>

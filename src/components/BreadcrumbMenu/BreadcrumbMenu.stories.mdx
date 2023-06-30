@@ -1,0 +1,91 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import {Button} from '../Button';
+
+
+
+
+
+<Meta title="Components/Menus/Breadcrumb Menu"/>
+
+# Breadcrumb
+
+<Canvas>
+  <Story
+    name="Breadcrumb Menu">
+    {(args) =>
+            <div class="top-menu">
+                <div class="top-menu-row-1">
+                    <input type="search" class="mr-xxs input-search btn-full space-between text-left" placeholder="Pesquisar no Wakeme" />
+                    <div>
+                        <div class="mr-xxs" id="toggle">
+                            <button type="button" class="toggle-button"><a><span class="material-symbols-outlined">menu</span></a></button>
+                        </div>
+                        <div aria-label="Perguntas Frequentes" class="tooltip-bottom">
+                            <svg id="faq-icon" alt="Duvidas" class="svg mr-xxs" width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17.5547 13.625C18.2839 12.8958 18.6484 12.0208 18.6484 11C18.6484 9.72396 18.1927 8.63021 17.2812 7.71875C16.3698 6.80729 15.276 6.35156 14 6.35156C12.724 6.35156 11.6302 6.80729 10.7188 7.71875C9.80729 8.63021 9.35156 9.72396 9.35156 11H11.6484C11.6484 10.3802 11.8854 9.83333 12.3594 9.35938C12.8333 8.88542 13.3802 8.64844 14 8.64844C14.6198 8.64844 15.1667 8.88542 15.6406 9.35938C16.1146 9.83333 16.3516 10.3802 16.3516 11C16.3516 11.6198 16.1146 12.1667 15.6406 12.6406L14.2188 14.1172C13.3073 15.1016 12.8516 16.1953 12.8516 17.3984V18H15.1484C15.1484 16.7969 15.6042 15.7031 16.5156 14.7188L17.5547 13.625ZM15.1484 22.6484V20.3516H12.8516V22.6484H15.1484ZM5.74219 6.29688C8.03906 4 10.7917 2.85156 14 2.85156C17.2083 2.85156 19.9427 4 22.2031 6.29688C24.5 8.55729 25.6484 11.2917 25.6484 14.5C25.6484 17.7083 24.5 20.4609 22.2031 22.7578C19.9427 25.0182 17.2083 26.1484 14 26.1484C10.7917 26.1484 8.03906 25.0182 5.74219 22.7578C3.48177 20.4609 2.35156 17.7083 2.35156 14.5C2.35156 11.2917 3.48177 8.55729 5.74219 6.29688Z" fill="#1469E3"/>
+                            </svg>
+                            <span class="tooltiptext">FAQ</span>
+                        </div>
+                        <div aria-label="Notificações" class="tooltip-bottom">
+                            <svg id="notification-icon" alt="Notificação" class="mr-xxs svg" width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 16.1484L19.3516 18.5V19.6484H0.648438V18.5L3 16.1484V10.3516C3 8.52865 3.45573 6.94271 4.36719 5.59375C5.3151 4.24479 6.60938 3.36979 8.25 2.96875V2.14844C8.25 1.67448 8.41406 1.27344 8.74219 0.945312C9.07031 0.580729 9.48958 0.398438 10 0.398438C10.5104 0.398438 10.9297 0.580729 11.2578 0.945312C11.5859 1.27344 11.75 1.67448 11.75 2.14844V2.96875C13.3906 3.36979 14.6667 4.24479 15.5781 5.59375C16.526 6.94271 17 8.52865 17 10.3516V16.1484ZM10 23.1484C9.34375 23.1484 8.77865 22.9297 8.30469 22.4922C7.86719 22.0547 7.64844 21.5078 7.64844 20.8516H12.3516C12.3516 21.4714 12.1146 22.0182 11.6406 22.4922C11.1667 22.9297 10.6198 23.1484 10 23.1484Z" fill="#1469E3"/>
+                            </svg>
+                            <span class="tooltiptext">Notificações</span>
+                        </div>
+                        <div id="dropDownButton1" class="dropdown-float">
+                            <div class="avatar tooltip-bottom">
+                                <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar"/>
+                                <div class="after"></div>
+                            </div>
+                            <span class="tooltiptext">Perfil</span>
+                            <div id="dropDown1" class="dropdown-float-content-rigth">
+                                <a href="#">Meu Perfil</a>
+                                <a href="#">Atualizar plano</a>
+                                <a href="#">Sair</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-menu-row-2">
+                    <div>
+                        <p id="breadcrumb-title">
+                          <svg width="30" height="19" viewBox="0 0 30 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.3125 10.8125C21.4792 10.8125 22.75 10.9792 24.125 11.3125C25.5 11.6458 26.7708 12.1875 27.9375 12.9375C29.1042 13.6875 29.6875 14.5417 29.6875 15.5V18.8125H21.6875V15.5C21.6875 13.6667 20.8125 12.125 19.0625 10.875C19.3542 10.8333 19.7708 10.8125 20.3125 10.8125ZM5.875 11.3125C7.25 10.9792 8.52083 10.8125 9.6875 10.8125C10.8542 10.8125 12.125 10.9792 13.5 11.3125C14.875 11.6458 16.125 12.1875 17.25 12.9375C18.4167 13.6875 19 14.5417 19 15.5V18.8125H0.3125V15.5C0.3125 14.5417 0.895833 13.6875 2.0625 12.9375C3.22917 12.1875 4.5 11.6458 5.875 11.3125ZM12.4375 7C11.6875 7.79167 10.7708 8.1875 9.6875 8.1875C8.60417 8.1875 7.66667 7.79167 6.875 7C6.08333 6.20833 5.6875 5.27083 5.6875 4.1875C5.6875 3.10417 6.08333 2.16667 6.875 1.375C7.66667 0.583333 8.60417 0.1875 9.6875 0.1875C10.7708 0.1875 11.6875 0.583333 12.4375 1.375C13.2292 2.16667 13.625 3.10417 13.625 4.1875C13.625 5.27083 13.2292 6.20833 12.4375 7ZM23.125 7C22.3333 7.79167 21.3958 8.1875 20.3125 8.1875C19.2292 8.1875 18.2917 7.79167 17.5 7C16.7083 6.20833 16.3125 5.27083 16.3125 4.1875C16.3125 3.10417 16.7083 2.16667 17.5 1.375C18.2917 0.583333 19.2292 0.1875 20.3125 0.1875C21.3958 0.1875 22.3333 0.583333 23.125 1.375C23.9167 2.16667 24.3125 3.10417 24.3125 4.1875C24.3125 5.27083 23.9167 6.20833 23.125 7Z" fill="#033E91"/>
+                          </svg>
+                          <span class="ml-nano h2 text-primary-dark">Lorem</span>
+                          <button id="myBtn" type="button" class="ml-nano btn button-primary"><a>Adicionar Lorem</a></button>
+                        </p>
+                    </div>
+                    <div id="top-menu-right">
+                        <button type="button" class="mr-nano btn outline-button-primary">
+                            <a><span class="material-symbols-outlined">grid_on</span>Editar colunas</a>
+                        </button>
+                        <button type="button" class="mr-nano btn outline-button-primary">
+                            <a><span class="material-symbols-outlined">filter_alt</span>Filtrar</a>
+                        </button>
+                        <button type="button" class="mr-nano btn outline-button-primary">
+                            <a><span class="material-symbols-outlined">search</span>Pesquisar em Lorem</a>
+                        </button>
+                        <div class="dropdown-float">
+                            <button id="dropDownButton2" type="button" class="btn outline-button-primary">
+                                <a>Ações<span class="material-symbols-outlined">expand_more</span></a>
+                            </button>
+                            <div id="dropDown2" class="dropdown-float-content-rigth">
+                                <a href="#">Modelos do Excel</a>
+                                <a href="#">Exportar para o Excel</a>
+                                <a href="#">Importar do Excel</a>
+                                <a href="#">Enviar um link por e-mail</a>
+                                <a href="#">Executar Relatório</a>
+                                <a href="#">Fluxo</a>
+                                <a href="#">Visualizar no Power BI</a>
+                                <a href="#">Campanha Rápida</a>
+                                <a href="#">Abrir Painéis</a>                                                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    }
+  </Story>
+</Canvas>
+

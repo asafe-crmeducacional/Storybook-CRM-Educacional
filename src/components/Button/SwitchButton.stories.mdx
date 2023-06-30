@@ -1,0 +1,38 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import {Button} from '../Button';
+
+
+
+<Meta title="Components/Buttons/Switch Toggle Button"/>
+
+# Default
+
+<Canvas>
+  <Story
+    name="Switch Toggle Button Default">
+    {(args) =>
+        <label class="switch">
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+        </label>
+    }
+  </Story>
+</Canvas>
+
+# Active
+
+<Canvas>
+  <Story
+    name="Switch Toggle Button Active">
+    {(args) =>
+        <label class="switch">
+            <input type="checkbox" checked/>
+            <span class="slider round"></span>
+        </label>
+    }
+  </Story>
+</Canvas>
+
+
+
+

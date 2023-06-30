@@ -1,0 +1,111 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+<Meta title="Components/Modal"/>
+
+# Como o modal funciona?
+
+• Os modais são construídos com HTML, CSS e JavaScript. Eles são posicionados sobre todo o resto do documento e removem a rolagem < body >para que o conteúdo modal role.
+• Clicar no “pano de fundo” do modal fechará automaticamente o modal.
+• As funções do modais monitoram todos os 
+
+
+<Canvas>
+  <Story
+    name="ModalButton">
+    {(args) =>
+      <button id="myBtn" type="button" class="ml-nano btn button-primary"><a>Modal Button</a></button>
+            }
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="ModalContent SM">
+    {(args) =>
+    <div class="modal-content-sm">
+      <div class="header-modal">
+        <span class="close">&times;</span>
+        <h3 class="h3">Modal Content Small</h3>
+      </div>
+      <div class="body-modal">
+        <div class="modal-item">
+          <h5 class="h5">Title</h5>
+          <div class="pt-xs">
+            <label for="label1" class="text-xxs text-darkest">Label</label>
+            <input id="label1" name="label1" class="input" type="text"/>
+            <label for="label2" class="text-xxs text-darkest">Label</label>
+            <input id="label2" name="label2" class="input" type="text"/>
+          </div>
+        </div>
+      </div>
+      <div class="footer-modal">
+        <button class="btn cancelar btn-md outline-button-disabled">Cancelar</button>
+        <button class="ml-nano btn btn-md button-sucess">Salvar</button>
+      </div>
+    </div>
+    }
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="ModalContent MD">
+    {(args) =>
+    <div class="modal-content-md">
+      <div class="header-modal">
+        <span class="close">&times;</span>
+        <h3 class="h3">Modal Content Medium</h3>
+      </div>
+      <div class="body-modal">
+        <div class="modal-item">
+          <h5 class="h5">Title</h5>
+          <div class="pt-xs">
+            <label for="label1" class="text-xxs text-darkest">Label</label>
+            <input id="label1" name="label1" class="input" type="text"/>
+            <label for="label2" class="text-xxs text-darkest">Label</label>
+            <input id="label2" name="label2" class="input" type="text"/>
+          </div>
+        </div>
+      </div>
+      <div class="footer-modal">
+        <button class="btn cancelar btn-md outline-button-disabled">Cancelar</button>
+        <button class="ml-nano btn btn-md button-sucess">Salvar</button>
+      </div>
+    </div>
+    }
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="ModalContent Large">
+    {(args) =>
+    <div class="modal-content">
+      <div class="header-modal">
+        <span class="close">&times;</span>
+        <h3 class="h3">Modal Content Large</h3>
+      </div>
+      <div class="body-modal">
+        <div class="modal-item">
+          <h5 class="h5">Title</h5>
+          <div class="pt-xs">
+            <label for="label1" class="text-xxs text-darkest">Label</label>
+            <input id="label1" name="label1" class="input" type="text"/>
+            <label for="label2" class="text-xxs text-darkest">Label</label>
+            <input id="label2" name="label2" class="input" type="text"/>
+          </div>
+        </div>
+      </div>
+      <div class="footer-modal">
+        <button class="btn cancelar btn-md outline-button-disabled">Cancelar</button>
+        <button class="ml-nano btn btn-md button-sucess">Salvar</button>
+      </div>
+    </div>
+    }
+  </Story>
+</Canvas>
+
+
+
+
+

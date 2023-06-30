@@ -1,0 +1,40 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+<Meta title="Components/Wizard"/>
+
+<Canvas>
+  <Story
+    name="Wizard">
+    {(args) =>
+    <div class="content">
+        <hr class="wizard-line"/>
+        <div class="wizard">
+            <div class="wizard-complete wizard-item">
+                <span class="wizard-circle">
+                    <p>1</p>
+                </span>
+                <h4>Lorem Ipsum</h4>
+            </div>
+            <div class="wizard-active wizard-item">
+                <span class="wizard-circle">
+                    <p>2</p>
+                </span>
+                <h4>Lorem Ipsum</h4>
+            </div>
+            <div class="wizard-item">
+                <span class="wizard-circle">
+                    <p>3</p>
+                </span>
+                <h4>Lorem Ipsum</h4>
+            </div>
+            <div class="wizard-item">
+                <span class="wizard-circle">
+                    <p>4</p>
+                </span>
+                <h4>Lorem Ipsum</h4>
+            </div>
+        </div>
+    </div>
+    }
+  </Story>
+</Canvas>

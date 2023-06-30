@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+<Meta title="Components/Form Fields/Select"/>
+
+# Select
+<Canvas>
+  <Story
+    name="Select">
+    {(args) =>
+    <form>
+      <label for="input" class="text-xxs text-darkest">Text Label</label>
+      <select class="select">
+        <option value="valor1">Select Example</option>
+        <option value="valor2">Valor 2</option>
+        <option value="valor3">Valor 3</option>
+      </select>
+     </form> 
+      }
+  </Story>
+</Canvas>
+

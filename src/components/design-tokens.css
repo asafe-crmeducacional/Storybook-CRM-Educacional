@@ -1,0 +1,126 @@
+/* CRM Educacional | Wakame One 
+   versão 0.1
+*/
+
+
+/*Importando a Font Blinker*/
+
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@200;300;400;600;700&display=swap');
+
+/*Material Icons*/
+
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+/*Importando a Font DM Sans*/
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+:root {
+    /*Font Family*/
+    --font-family-principal: 'Blinker';
+    --font-family-base: 'DM Sans';
+    /*Line Height*/
+    --line-height-tight: 100%;
+    --line-height-medium: 120%;
+    --line-height-distant: 150%;
+    --line-height-superdistant: 200%;
+    /*Font Weight*/
+    --font-weight-bold: 700;
+    --font-weight-medium: 600;
+    --font-weight-regular: 500;
+    --font-weight-light: 400;
+    /*Font Size*/
+    --font-size-xxxs: 0.75rem;
+    --font-size-xxs: 0.875rem;
+    --font-size-xs: 1rem;
+    --font-size-sm: 1.25rem;
+    --font-size-md: 1.5rem;
+    --font-size-lg: 2rem;
+    --font-size-xl: 2.5rem;
+    --font-size-xxl: 3rem;
+    --font-size-xxxl: 4rem;
+    --font-size-display: 5rem;
+    --font-size-giant: 6rem;
+    /*Primary Colors*/
+    --color-primary-ultradark: #033E91;
+    --color-primary-darkest: #033E91;
+    --color-primary-dark: #1469E3;
+    --color-primary-medium: #0669F7;
+    --color-primary-light: #207CFF;
+    --color-primary-lightest: #6BABFF;
+    --color-primary-ultralight: #CCE2FF;
+    /*Secondary Colors*/
+    --color-accent-darkest: #4A0391;
+    --color-accent-dark: #6305C4;
+    --color-accent-medium: #7D06F7;
+    --color-accent-light: #9536F7;
+    --color-accent-lightest: #AE68F7;
+    /*Sucess Colors*/
+    --color-suport-sucess-dark: #194E31;
+    --color-suport-sucess-medium: #2E844A;
+    --color-suport-sucess-ligth: #45C65A;
+    /*Error Colors*/
+    --color-suport-erro-dark: #8E030F;
+    --color-suport-erro-medium: #BA0517;
+    --color-suport-erro-ligth: #FA384C;
+    /*Warning Colors*/
+    --color-suport-warning-dark: #BF5900;
+    --color-suport-warning-medium: #FE7501;
+    --color-suport-warning-ligth: #FE9339;
+    /*Neutral Colors*/
+    --color-neutral-darkest: #181818;
+    --color-neutral-dark: #747880;
+    --color-neutral-medium: #D6D7DA;
+    --color-neutral-light: #EFF0F1;
+    --color-neutral-lightest: #FFFFFF;
+    /*Border Radius*/
+    --border-radius-none: 0rem;
+    --border-radius-xsm: 4px;
+    --border-radius-sm: 0.5rem;
+    --border-radius-md: 1rem;
+    --border-radius-lg: 1.5rem;
+    --border-radius-pill: 500px;
+    --border-radius-circular: 50%;
+    /*Border Widths*/
+    --border-width-none: 0px;
+    --border-width-hairline: 1px solid;
+    --border-width-thin: 2px solid;
+    --border-width-thick: 4px solid;
+    --border-width-heavy: 8px solid;
+    /*Opacity Levels*/
+    --opacity-level-semiopaque: 0.80;
+    --opacity-level-intense: 0.64;
+    --opacity-level-medium: 0.32;
+    --opacity-level-light: 0.16;
+    --opacity-level-semitransparent: 0.08;
+    /*Shadow Levels*/
+    --shadow-level-1: 0px 4px 8px rgba(0, 0, 0, 0.080);
+    --shadow-level-2: 0px 8px 24px rgba(0, 0, 0, 0.080);
+    --shadow-level-3: 0px 16px 32px rgba(0, 0, 0, 0.080);
+    --shadow-level-4: 0px 16px 48px rgba(0, 0, 0, 0.080);
+    /*Padding Equal*/
+    --spacing-inset-quarck: 4px;
+    --spacing-inset-nano: 8px;
+    --spacing-inset-xs: 16px;
+    --spacing-inset-sm: 24px;
+    --spacing-inset-md: 32px;
+    --spacing-inset-lg: 40px;
+    /*Padding Squish*/
+    --spacing-squish-quarck: 4px 8px;
+    --spacing-squish-nano: 8px 16px;
+    --spacing-squish-xs: 16px 24px;
+    --spacing-squish-sm: 16px 32px;
+    /*Margin*/
+    --spacing-stack-quarck: 4px;
+    --spacing-stack-nano: 8px;
+    --spacing-stack-xxxs: 16px;
+    --spacing-stack-xxs: 24px;
+    --spacing-stack-xs: 32px;
+    --spacing-stack-sm: 40px;
+    --spacing-stack-md: 48px;
+    --spacing-stack-lg: 56px;
+    --spacing-stack-xl: 64px;
+    --spacing-stack-xxl: 80px;
+    --spacing-stack-xxxl: 120px;
+    --spacing-stack-huge: 160px;
+    --spacing-stack-giant: 200px;
+}

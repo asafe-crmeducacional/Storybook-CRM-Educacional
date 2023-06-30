@@ -1,0 +1,51 @@
+import { Meta, Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+import {Button} from '../Button';
+
+
+
+<Meta title="Components/Buttons/Outline"/>
+
+# Outline
+
+<Canvas>
+  <Story
+    name="Outline Primary">
+    {(args) =>
+    <button  type = "button"  class = "btn outline-button-primary"><a>Primarry button </a></button>}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Outline Error">
+    {(args) =>
+    <button  type = "button"  class = "btn outline-button-secondary"><a>Error button</a></button>}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Outline Sucess">
+    {(args) =>
+    <button  type = "button"  class = "btn outline-button-sucess"><a>Sucess button</a></button>}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Outline Warning">
+    {(args) =>
+    <button  type = "button"  class = "btn outline-button-warning"><a>Warning button</a></button>}
+  </Story>
+</Canvas>
+
+<Canvas>
+  <Story
+    name="Outline Disabled">
+    {(args) =>
+    <button  type = "button"  class = "btn outline-button-disabled"><a>Disabled  button</a></button>}
+  </Story>
+</Canvas>
+
+
+
